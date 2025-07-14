@@ -21,3 +21,7 @@ ingress:
   tls: []
 
 resources: {}
+
+pdb:
+  enabled: true
+  minAvailable: 1
