@@ -2,7 +2,7 @@ replicaCount: 4
 
 image:
   repository: nginx
-  tag: "1.21"
+  tag: "1.27"
   pullPolicy: IfNotPresent
 
 service:
@@ -24,4 +24,4 @@ resources: {}
 
 pdb:
   enabled: true
-  minAvailable: 1
+  maxUnavailable: 1
